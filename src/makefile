@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -lportaudio
+CFLAGS=-Wall -lportaudio -shared -fPIC
 
-patest_saw: patest_saw.c
+libpatest_saw: patest_saw.c
 	$(CC) $< -o $@ $(CFLAGS)
