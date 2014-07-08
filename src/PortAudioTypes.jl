@@ -4,7 +4,7 @@
 #   PortAudioEnums: Container types for enums, mostly integers
 #   PortAudioStructs: Composite type representation mirroring the structs in portaudio.h
 
-module PortAudioTypes
+module PA_Types
 
 export PaError, PaDeviceIndex, PaHostApiIndex, PaStream, PaTime
 export PaSampleFormat, PaStreamFlags, PaStreamCallbackFlags
@@ -22,14 +22,14 @@ export paFloat32, paInt32, paInt24, paInt16, paInt8, paUInt8
 export paCustomFormat, paNonInterleaved
 
 typealias PaSampleFormat        Culong
-paFloat32   = convert(PaSampleFormat, 0x00000001)
-paInt32     = convert(PaSampleFormat, 0x00000002)
-paInt24     = convert(PaSampleFormat, 0x00000004)
-paInt16     = convert(PaSampleFormat, 0x00000008)
-paInt8      = convert(PaSampleFormat, 0x00000010)
-paUInt8     = convert(PaSampleFormat, 0x00000020)
-paCustomFormat   = convert(PaSampleFormat, 0x00010000)
-paNonInterleaved = convert(PaSampleFormat, 0x80000000)
+const paFloat32   = convert(PaSampleFormat, 0x00000001)
+const paInt32     = convert(PaSampleFormat, 0x00000002)
+const paInt24     = convert(PaSampleFormat, 0x00000004)
+const paInt16     = convert(PaSampleFormat, 0x00000008)
+const paInt8      = convert(PaSampleFormat, 0x00000010)
+const paUInt8     = convert(PaSampleFormat, 0x00000020)
+const paCustomFormat   = convert(PaSampleFormat, 0x00010000)
+const paNonInterleaved = convert(PaSampleFormat, 0x80000000)
 
 
 export PortAudioError
@@ -38,7 +38,7 @@ type PortAudioError <: Exception
     errorCode::PaError
 end
 
-module PortAudioEnums
+module PA_Enums
 # These are just here so the code that refers to them is cleaner,
 # Ultimately, until Julia has native Enum support they are all
 # just treated as subtypes of Cint.
@@ -50,7 +50,7 @@ typealias PaHostApiTypeId        PaEnum
 typealias PaStreamCallbackResult PaEnum
 end
 
-module PortAudioStructs
+module PA_Structs
 # I'm not entirely sure how to deal with structs,
 # everything I've found seems to just treat things as pointers
 # and do a bunch of unsafe_load(...) operations.
