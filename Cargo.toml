@@ -1,0 +1,8 @@
+[package]
+name = "Cacophony"
+version = "0.1.0"
+authors = ["ahuras"]
+
+[dependencies]
+portaudio = "*"
+portmidi = "*"
