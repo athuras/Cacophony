@@ -1,4 +1,4 @@
 *.swp
 *.o
-Cargo.lock
 tags
+.stack-work/
