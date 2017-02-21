@@ -29,12 +29,12 @@ version :: Version
 version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
-bindir     = "/home/ahuras/Workspace/Cacophony/cacophony-hs/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/bin"
-libdir     = "/home/ahuras/Workspace/Cacophony/cacophony-hs/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/Cacophony-0.1.0.0-5eQYi4AEI0S18wqx7En4CA"
-dynlibdir  = "/home/ahuras/Workspace/Cacophony/cacophony-hs/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/lib/x86_64-linux-ghc-8.0.2"
-datadir    = "/home/ahuras/Workspace/Cacophony/cacophony-hs/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/share/x86_64-linux-ghc-8.0.2/Cacophony-0.1.0.0"
-libexecdir = "/home/ahuras/Workspace/Cacophony/cacophony-hs/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/libexec"
-sysconfdir = "/home/ahuras/Workspace/Cacophony/cacophony-hs/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/etc"
+bindir     = "/home/ahuras/Workspace/Cacophony/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/bin"
+libdir     = "/home/ahuras/Workspace/Cacophony/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/lib/x86_64-linux-ghc-8.0.2/Cacophony-0.1.0.0-6zRasYAQIZt49bij5CBjQl"
+dynlibdir  = "/home/ahuras/Workspace/Cacophony/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/lib/x86_64-linux-ghc-8.0.2"
+datadir    = "/home/ahuras/Workspace/Cacophony/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/share/x86_64-linux-ghc-8.0.2/Cacophony-0.1.0.0"
+libexecdir = "/home/ahuras/Workspace/Cacophony/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/libexec"
+sysconfdir = "/home/ahuras/Workspace/Cacophony/.stack-work/install/x86_64-linux/lts-8.2/8.0.2/etc"
 
 getBinDir, getLibDir, getDynLibDir, getDataDir, getLibexecDir, getSysconfDir :: IO FilePath
 getBinDir = catchIO (getEnv "Cacophony_bindir") (\_ -> return bindir)

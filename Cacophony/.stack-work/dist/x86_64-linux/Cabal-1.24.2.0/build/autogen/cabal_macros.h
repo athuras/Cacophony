@@ -7,12 +7,26 @@
   (major1) == 0 && (major2) <  1 || \
   (major1) == 0 && (major2) == 1 && (minor) <= 0)
 
+/* package PortMidi-0.1.6.1 */
+#define VERSION_PortMidi "0.1.6.1"
+#define MIN_VERSION_PortMidi(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  1 || \
+  (major1) == 0 && (major2) == 1 && (minor) <= 6)
+
 /* package base-4.9.1.0 */
 #define VERSION_base "4.9.1.0"
 #define MIN_VERSION_base(major1,major2,minor) (\
   (major1) <  4 || \
   (major1) == 4 && (major2) <  9 || \
   (major1) == 4 && (major2) == 9 && (minor) <= 1)
+
+/* package portaudio-0.2.4 */
+#define VERSION_portaudio "0.2.4"
+#define MIN_VERSION_portaudio(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  2 || \
+  (major1) == 0 && (major2) == 2 && (minor) <= 4)
 
 /* tool alex-3.1.7 */
 #define TOOL_VERSION_alex "3.1.7"
@@ -98,7 +112,7 @@
   (major1) == 2 && (major2) <  26 || \
   (major1) == 2 && (major2) == 26 && (minor) <= 0)
 
-#define CURRENT_COMPONENT_ID "Cacophony-0.1.0.0-5eQYi4AEI0S18wqx7En4CA"
+#define CURRENT_COMPONENT_ID "Cacophony-0.1.0.0-6zRasYAQIZt49bij5CBjQl"
 
-#define CURRENT_PACKAGE_KEY "Cacophony-0.1.0.0-5eQYi4AEI0S18wqx7En4CA"
+#define CURRENT_PACKAGE_KEY "Cacophony-0.1.0.0-6zRasYAQIZt49bij5CBjQl"
 

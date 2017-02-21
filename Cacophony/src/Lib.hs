@@ -1,6 +1,14 @@
 module Lib
-    ( someFunc
+    ( showMidiDevices
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import Sound.PortMidi
+
+showMidiDevices :: IO ()
+showMidiDevices = do
+  initialize
+  Just deviceId <- getDefaultInputDeviceID
+  dInfo <- getDeviceInfo deviceId
+  print $ show dInfo
+  terminate
+  print "Done"
