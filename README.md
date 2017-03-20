@@ -16,4 +16,4 @@ So here is where everything stands:
 
 Months pass.
 
-Haskell-takeover.
+Haskell-takeover. I've discovered the `stack` build tool, which has made my life dramatically easier. Around the same time I completely shifted my life to using fedora linux, so now my library locations don't bounce around as much. Still unravelling the mysteries of Haskell.
