@@ -1,4 +1,6 @@
-*.swp
 *.o
-tags
+*.swp
+dist/
+dist-stack/
 .stack-work/
+tags

@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import Lib (showDevices)
 
 main :: IO ()
-main = showMidiDevices
+main = showDevices
